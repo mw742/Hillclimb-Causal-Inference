@@ -46,6 +46,6 @@ micromamba create -f environment.yml
 conda env create -f environment.yml
 
 # Activate the environment
-micromamba activate hillclimb-causal
+micromamba activate my_env
 # or
-conda activate hillclimb-causal
+conda activate my_env
