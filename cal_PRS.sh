@@ -127,12 +127,12 @@ echo "ABCD dataset without ambiguous SNPs saved as ABCD_noambig.*"
 echo "Ensuring all files share the same individuals..."
 
 # 6a. Extract FID/IID from phenotype (assuming CSV with FID,IID,...)
-#    If your phenotype_file.csv columns are something like:
+#    phenotype_file.csv columns are something like:
 #    FID, IID, phenotype
 #    then the below line can be used. Adjust if needed.
 awk '{print $1, $2}' phenotype_file_cauc.txt > pheno_fid_iid_cauc.txt
 
-# 6b. Extract FID/IID from covariates (assuming they are space-delimited with FID and IID in the first two columns)
+# 6b. Extract FID/IID from covariates (they are space-delimited with FID and IID in the first two columns)
 awk '{print $1, $2}' ABCD_cauc_only_pca.cov > covar_fid_iid_cauc.txt
 
 # 6c. Extract FID/IID from genotype fam
@@ -143,7 +143,7 @@ comm -12 <(sort pheno_fid_iid_cauc.txt) <(sort covar_fid_iid_cauc.txt) | comm -1
 
 echo "Filtering phenotype_file.csv and covariates_with_fid.txt to keep only intersection..."
 
-# 6e. Filter phenotype (assuming CSV with FID,IID in columns 1,2):
+# 6e. Filter phenotype (CSV with FID,IID in columns 1,2):
 awk 'NR == FNR { ids[$1" "$2] = 1; next }
      { if (($1" "$2) in ids) print $1, $2, $3 }' \
      common_fid_iid_cauc.txt phenotype_file_cauc.txt \
@@ -151,7 +151,7 @@ awk 'NR == FNR { ids[$1" "$2] = 1; next }
 
 
 
-# 6f. Filter covariates (assuming space-delimited with FID, IID in columns 1,2):
+# 6f. Filter covariates (space-delimited with FID, IID in columns 1,2):
 awk 'NR==FNR {a[$1,$2]; next} ($1,$2) in a' common_fid_iid_cauc.txt ABCD_cauc_only_pca.cov > filtered_covariates_with_fid_cauc.txt
 
 # 6g. Filter genotype to keep only these individuals
