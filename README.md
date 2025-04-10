@@ -8,7 +8,7 @@
 
 ## 🧠 Overview
 
-This repository provides all scripts and configuration files used in our causal inference project exploring how parental behaviors and children's genetic predispositions interact to influence externalizing behaviors.  
+This repository provides scripts and configuration files used in our causal inference project exploring how parental behaviors and children's genetic predispositions interact to influence externalizing behaviors.  
 We employ a combination of factor analysis, regression techniques, polygenic risk score (PRS) calculation, causal discovery algorithms (hill climbing search), structural equation modeling (SEM), and bootstrap validation to identify and verify key causal pathways.
 
 ---
