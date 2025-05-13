@@ -50,6 +50,7 @@ micromamba activate my_env
 # or
 conda activate my_env
 
+---
 
 ### References
 
