@@ -49,10 +49,12 @@ conda env create -f environment.yml
 micromamba activate my_env
 # or
 conda activate my_env
+```
+
 
 ---
 
-### References
+## Reference
 
 **Hillclimb-Causal Inference: A Data-Driven Approach to Identify Causal Pathways Among Parental Behaviors, Genetic Risk, and Externalizing Behaviors in Children**  
 Mengman Wei*, Qian Peng*  
