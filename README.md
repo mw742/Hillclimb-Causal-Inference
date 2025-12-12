@@ -62,9 +62,8 @@ Mengman Wei*, Qian Peng*
 **Subjects**: Quantitative Methods (q-bio.QM)
 
 **Cite as**:  
-Wei, M., & Peng, Q. (2025). *Hillclimb-Causal Inference: A Data-Driven Approach to Identify Causal Pathways Among Parental Behaviors, Genetic Risk, and Externalizing Behaviors in Children*. arXiv:2505.06784 [q-bio.QM].  
-(You can also cite this version as arXiv:2505.06784v1 [q-bio.QM]).
+Wei, M. and Peng, Q., 2025. Hillclimb-Causal Inference: a data-driven approach to identify causal pathways among parental behaviors, genetic risk, and externalizing behaviors in children. Journal of the American Medical Informatics Association, 32(12), pp.1936-1946.
 
-**DOI**: [https://doi.org/10.48550/arXiv.2505.06784](https://doi.org/10.48550/arXiv.2505.06784)
+**DOI**: https://doi.org/10.1093/jamia/ocaf153
 
 
